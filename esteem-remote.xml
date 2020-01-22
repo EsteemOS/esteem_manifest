@@ -14,7 +14,7 @@
 <project path="frameworks/av/media" name="frameworks_av_media" groups="pdk-fs" remote="estm" revision="8.1" />
 
 <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" groups="pdk-fs" remote="estm" revision="8.1" />
-<project path="vendor/xiaomi" name="vendor_xiaomi" groups="pdk-fs" revision="8.1" />
+<project path="vendor/xiaomi" name="vendor_xiaomi" groups="pdk-fs" remote="estm" revision="8.1" />
 <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" groups="pdk-fs" remote="estm" revision="8.1" />
 
 <remove-project name="platform/vendor/nxp/interfaces/opensource/nfc" />
