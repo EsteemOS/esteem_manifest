@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+      <remote name="github"
+        fetch="https://github.com/" />
+<remote name="estm"
+      fetch="http://github.com/EsteemOS/" />
+<project path="device/xiaomi/beryllium" name="esteem_device_xiaomi_beryllium" groups="pdk-fs" remote="estm" revision="8.1"/>
+<project path="device/xiaomi/sdm845-common" name="esteem_device_xiaomi_sdm845-common" groups="pdk-fs" remote="estm" revision="8.1" />
+
+<remove-project name="platform/external/ant-wireless/ant_native" />
+<project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" groups="pdk-fs" remote="estm" revision="8.1" />
+
+<remove-path name="frameworks/av/media" />
+<project path="frameworks/av/media" name="frameworks_av_media" groups="pdk-fs" remote="estm" revision="8.1" />
+
+<project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" groups="pdk-fs" remote="estm" revision="8.1" />
+<project path="vendor/xiaomi" name="vendor_xiaomi" groups="pdk-fs" revision="8.1" />
+<project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" groups="pdk-fs" remote="estm" revision="8.1" />
+
+<remove-project name="platform/vendor/nxp/interfaces/opensource/nfc" />
+<project path="vendor/nxp/interfaces/opensource/nfc" name="vendor_nxp_interfaces_opensource_nfc" groups="pdk-fs" remote="estm" revision="8.1" />
+
+<remove-project name="platform/build" />
+<project path="build/make" name="build_make" groups="pdk" remote="estm" revision="8.1" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+</project>
+<remove-project name="platform/vendor/qcom-opensource/interfaces" />
+<project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="estm" revison="8.1" >
+    <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
+      </project>
+<project path="hardware/interfaces/tetheroffload" name="hardware_interfaces_tetheroffload" groups="pdk-fs" remote="estm" revision="8.1" />
+<project path="vendor/esteem" name="vendor_esteem" groups="pdk-fs" remote="estm" revision="oreo/esteem" />
+<project path="packages/apps/Pride" name="esteem_packages_apps_Pride" groups="pdk-fs" remote="estm" revision="8.1" />
+      
+</manifest>
