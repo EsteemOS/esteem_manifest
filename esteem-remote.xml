@@ -34,4 +34,8 @@
 <project path="packages/apps/Pride" name="esteem_packages_apps_Pride" groups="pdk-fs" remote="estm" revision="caf/8.1" />
 <remove-project name="platform/system/bt" />
 <project path="system/bt" name="system_bt" groups="pdk-fs" remote="estm" revision="8.1" />
+<remove-project name="platform/system/connectivity/wificond" />
+<project path="system/connectivity/wificond" name="system_connectivity_wificond" groups="pdk-fs" remote="estm" revision="8.1" />
+<remove-project name="platform/system/vold" />
+<project path="system/vold" name="system_vold" groups="pdk-fs" remote="estm" revision="8.1"/>
 </manifest>
