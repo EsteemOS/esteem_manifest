@@ -32,6 +32,6 @@
       </project>
 <project path="vendor/esteem" name="vendor_esteem" groups="pdk-fs" remote="estm" revision="oreo/esteem" />
 <project path="packages/apps/Pride" name="esteem_packages_apps_Pride" groups="pdk-fs" remote="estm" revision="caf/8.1" />
-<remove-project name="system/bt" />
-<project path="system/bt" name="system/bt" groups="pdk-fs" remote="estm" revision="8.1" />
+<remove-project name="platform/system/bt" />
+<project path="system/bt" name="system_bt" groups="pdk-fs" remote="estm" revision="8.1" />
 </manifest>

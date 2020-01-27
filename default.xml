@@ -4,6 +4,7 @@
 <default remote="caf" revision="refs/heads/android-external.lnx.2.9.1-rel"/>
 <project name="device/generic/goldfish" revision="887b6a11de4e65be24474268bd7720c863c2c59d" upstream="android-framework.lnx.3.1.r4-rel"/>
 <project name="device/common" revision="44f3e76431cd7ab8d546d4eac9fccd391f28bc15" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="device/qcom/common" revision="d8715797e0ccd4a6207aee3a516b30ff8e2c924c" upstream="qcom-devices.lnx.3.0.r6-rel">
   <copyfile dest="build.sh" src="build.sh"/>
   <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   <copyfile dest="kernel/Android.mk" src="stop_scan.mk"/>
