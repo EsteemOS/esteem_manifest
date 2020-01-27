@@ -9,10 +9,6 @@
 
 <remove-project name="platform/external/ant-wireless/ant_native" />
 <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" groups="pdk-fs" remote="estm" revision="8.1" />
-
-<remove-path name="frameworks/av/media" />
-<project path="frameworks/av/media" name="frameworks_av_media" groups="pdk-fs" remote="estm" revision="8.1" />
-
 <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" groups="pdk-fs" remote="estm" revision="8.1" />
 <project path="vendor/xiaomi" name="vendor_xiaomi" groups="pdk-fs" remote="estm" revision="8.1" />
 <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" groups="pdk-fs" remote="estm" revision="8.1" />
@@ -31,11 +27,11 @@
     <linkfile src="tools" dest="build/tools" />
 </project>
 <remove-project name="platform/vendor/qcom-opensource/interfaces" />
-<project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="estm" revison="8.1" >
+<project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="estm" revision="8.1" >
     <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
       </project>
-<project path="hardware/interfaces/tetheroffload" name="hardware_interfaces_tetheroffload" groups="pdk-fs" remote="estm" revision="8.1" />
 <project path="vendor/esteem" name="vendor_esteem" groups="pdk-fs" remote="estm" revision="oreo/esteem" />
-<project path="packages/apps/Pride" name="esteem_packages_apps_Pride" groups="pdk-fs" remote="estm" revision="8.1" />
-      
+<project path="packages/apps/Pride" name="esteem_packages_apps_Pride" groups="pdk-fs" remote="estm" revision="caf/8.1" />
+<remove-project name="system/bt" />
+<project path="system/bt" name="system/bt" groups="pdk-fs" remote="estm" revision="8.1" />
 </manifest>

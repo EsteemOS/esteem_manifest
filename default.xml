@@ -2,8 +2,8 @@
 <manifest>
 <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
 <default remote="caf" revision="refs/heads/android-external.lnx.2.9.1-rel"/>
+<project name="device/generic/goldfish" revision="887b6a11de4e65be24474268bd7720c863c2c59d" upstream="android-framework.lnx.3.1.r4-rel"/>
 <project name="device/common" revision="44f3e76431cd7ab8d546d4eac9fccd391f28bc15" upstream="android-framework.lnx.3.1.r4-rel"/>
-<project name="device/qcom/common" revision="d8715797e0ccd4a6207aee3a516b30ff8e2c924c" upstream="qcom-devices.lnx.3.0.r6-rel">
   <copyfile dest="build.sh" src="build.sh"/>
   <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   <copyfile dest="kernel/Android.mk" src="stop_scan.mk"/>
@@ -374,6 +374,20 @@
 <project name="platform/hardware/ril" path="hardware/ril" revision="a9e983fde87e33419bc7e6af9f43f47cdf4cb04a" upstream="atel.lnx.2.9.2.r6-rel"/>
 <project name="platform/libcore" path="libcore" revision="4aa4183ef91ecd25961d154f161473a8e657260b" upstream="android-framework.lnx.3.1.r4-rel"/>
 <project name="platform/libnativehelper" path="libnativehelper" revision="f0192b324f9a89a821c707378e47c208790955db" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" revision="e14788f5e5ff653b946c68980906ca01f405c8e2" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" revision="da0c876e06aa6f7e1ca7a600459af9e1e8cab339" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" revision="07dbca1344b91e252aee92348b39304c2ef42c32" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/LensPicker" path="packages/apps/Car/LensPicker" revision="1f9791d35594297df9c37d44a48090df96110712" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" revision="0729ac7918d66cd354cc34b3481542f0e37b4ba6" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media" revision="5924aecb2838ba1b61f7093705b7b8622bd088c0" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/Messenger" path="packages/apps/Car/Messenger" revision="aba72a647037b6e5151b0d2141792018eb19e603" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/Overview" path="packages/apps/Car/Overview" revision="374b41023afc0fad8c0d410cd266bf0ea945ccb8" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" revision="73e242806d45659824a505276ff3a795d513d9a6" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="639ec831c3dad6aca1b34db78c99c99acb918b22" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/Stream" path="packages/apps/Car/Stream" revision="c35843f2c9480544ecea9df5e47955c1a28b1e51" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="3506f3f39a1328465009ec080a741373b338bead" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/UserManagement" path="packages/apps/Car/UserManagement" revision="ff9fc654b3b7640949d0e971b9542b0387433935" upstream="android-framework.lnx.3.1.r4-rel"/>
+<project name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="11a5e130be5a17f3b1f055805d373de08d00e639" upstream="android-framework.lnx.3.1.r4-rel"/>
 <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="ae5989936da179b2afeceae8ff407fb67a2b2512" upstream="android_ui.lnx.2.9.2.r7-rel"/>
 <project name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="b42e07f0a7f31868d1d09c1cb1ed9029842be9c9" upstream="bt.lnx.3.2.r8-rel"/>
 <project name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="4aefbe8ff37a3d67136eab7f29d37c597eef3d1c" upstream="android-framework.lnx.3.1.r4-rel"/>
